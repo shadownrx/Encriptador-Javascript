@@ -12,6 +12,31 @@
 <body>
     <header>
         <img src="Assets/img/aluraoracle.png" alt="logo de alura">
+        <button id="themeToggleBtn">Modo Oscuro</button>
     </header>
+    <main>
+        <form class="form-section">
+            <textarea class="form-input" name="mensaje" id="miTextarea" cols="30" rows="10" placeholder="Ingresa tu texto aqui"></textarea>
+            <div class="btn-container">
+                <div class="alert-mjs">
+                    <img src="Assets/img/Vectorspam.png" alt="alert"><span>Solo letras minusculas y sin acento</span>
+                </div>
+            </div>
+            <div class="submit__container">
+                <input class="form-btn" type="submit" value="Encriptar" id="encriptarBtn">
+                <input class="form-btn-secundary" type="submit" value="Desencriptar" id="desencriptarBtn">
+            </div>
+        </form>
+        <aside class="result">
+            <img src="Assets/img/Muñecoimagen.png" alt="Muñecoimagen" class="result__img">
+            <div id="carga" class="loader hidden"></div>
+            <div class="result-container">
+                <h3 id="result__title" class="result__title">Ningun texto fue encontrado</h3>
+                <p id="result__text" class="result__text">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <button id="copiarBtn" class="form-btn-copy hidden">copiar</button>
+            </div>
+        </aside>
+    </main>
+    <script src="Assets/script.js"></script>
 </body>
 </html>
